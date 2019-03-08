@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.formats":[
+			{
+				"format": "nested",
+				"extensionName": ".css",
+				"savePath": "/css"
+			},
+			{
+				"format": "compressed",
+				"extensionName": ".min.css",
+				"savePath": "/css/min"
+			},
+		],
+	 "liveSassCompile.settings.generateMap": false,
+	}
+}

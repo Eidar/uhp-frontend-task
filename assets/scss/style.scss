@@ -1,0 +1,222 @@
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+// MISC
+#font-white {
+  color: #fff !important;
+}
+
+#goto-top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+// NAVBAR
+
+.navbar-logo{
+  height: 60px;
+  align-self: center;
+  &--tilt{
+    background-color: $color-primary-dark;
+    background-image: linear-gradient(to right bottom, $color-primary-dark 49%, #fff 51%);
+    width: 100px;
+    height: 120px;
+  }
+}
+
+.navbar-branding-container{
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-image {
+  padding-top: 120px !important;
+  padding-bottom: 200px !important;
+  background-image: url("/img/header_img.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.bg-primary {
+  background-color: $color-primary-dark;  
+}
+
+.icon--phone{
+  height: 15px;
+  width: 12px;
+  background-image: url("/img/icons/phone_ico.png");
+}
+
+.icon--flag{
+  height: 16px;
+  width: 23px;
+  background-image: url("/img/icons/flg_eng_ico.png");
+}
+
+// HEADER IMAGE
+.border-btm {
+  border-bottom: 3px solid $color-detail;    
+}
+.img-backslash {
+  height: 60px;
+  background-image: url("/img/backslash.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+}
+
+// SERVICES
+.item {
+  background: $color-detail;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  &-webdev{
+    background-image: url("/img/icons/srvc_webdev_ico.png"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &-mobile{
+    background-image: url("/img/icons/srvc_chechk_ico.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &-it{
+    background-image: url("/img/icons/srvc_itconsultacy_ico.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+// LATEST NEWS
+div#news.container-fluid {
+  // background-color: $color-base;
+  background-image: url("/img/latest_news_bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon--date{
+  height: 16px;
+  width: 23px;
+  background-image: url("/img/icons/date_ico.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon--user{
+  height: 16px;
+  width: 23px;
+  background-image: url("/img/icons/user_ico.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img{
+  height: 250px;
+  &-main {
+    background-image: url("/img/latest_uhpexhibition.png");
+  }
+  &-secondary-1{
+    background-image: url("/img/latest_hybridapps.png");
+  }
+  &-secondary-2{
+    background-image: url("/img/latest_asinean.png");
+  }
+}
+
+.card-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &>p{
+    max-height:95px;
+    font-size: 80%;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding-bottom: 5px;
+  }
+}
+.corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to right bottom, transparent 48%, #f8f9fa 51%);
+    width: 80px;
+    height: 80px;
+    &-month{
+      margin-top: 50px;
+      font-weight: 800;
+    }
+    &-day{
+      font-weight: 800;
+      font-size: 1.7rem;
+      color: $color-detail;
+    }
+}
+
+.corner-container {
+  line-height: 0.8;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+// SELECTED REFERENCES
+
+#arrow-left {
+  margin-left: auto;
+  min-height: 90px;
+  width: 50px;
+  background-image: url("/img/icons/arrow_back_slider.png");
+  background-size: cover;
+  }
+#arrow-right {
+  margin-right: auto;
+  min-height: 90px;
+  width: 50px;
+  background-image: url("/img/icons/arrow_next_slider.png");
+  background-size: cover;
+ }
+
+// CLIENTS 
+ .person>p,span{
+   font-size: 90%;
+ }
+
+ // WORK TOGETHER
+ .lets-work{
+   background-color: rgb(0, 37, 66);
+   background-image: url("/img/work_together_bg.png");
+   background-size: cover;
+   background-position: right;
+   background-repeat: no-repeat;
+ }
+ 
+ // FOOTER
+ h5#footer-title{
+  color: $color-detail !important;
+}
+footer li{
+  margin-top: 10px;
+  &>a {
+  color: black;
+  }
+}
